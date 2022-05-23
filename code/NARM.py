@@ -213,9 +213,9 @@ def Train(train_loader, vali_loader, item_nuniq,
             corr_hit, corr_ndcg = HIT, NDCG
             torch.save(best_model, model_save + 'narm.pkl')
             print('Model updated.')
-        if epoch == 0:
-            et = time()
-            print('The last time of 1 epoch: {} min'.format((et - st) / 60))
+        
+        et = time()
+        print('The last time of 1 epoch: {} min'.format((et - st) / 60))
 
     print('\n--- Validation Set ---')
     print('[+] HIT@{} : {}'.format(match_num, corr_hit))
