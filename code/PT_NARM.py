@@ -30,7 +30,7 @@ if __name__ == '__main__':
     else:
         data_path = '../tcdata'
 
-    train_path = ['{}/train_click_log.csv'.format(data_path), '{}/testA_click_log.csv'.format(data_path)]
+    train_path = '{}/train_click_log.csv'.format(data_path)
     train_click = load_data(train_path)
 
     # NARM
